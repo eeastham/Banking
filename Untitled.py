@@ -22,17 +22,17 @@ class Customer(object):
         return self.balance
 
 
-erik = Customer('erik eastham',100)
-print erik.name
-print erik.balance
-erik.balance = 1000
-print erik.balance
-Customer.deposit(erik,100)
-#providing two arguments here, so that you apply the deposit method to erik,
+e = Customer('e eastham',100)
+print e.name
+print e.balance
+e.balance = 1000
+print e.balance
+Customer.deposit(e,100)
+#providing two arguments here, so that you apply the deposit method to e,
 #and the amount is of 100
-print erik.balance
+print e.balance
 
-erik.withdraw(100)
-#shorthand is erik.deposit(100)
+e.withdraw(100)
+#shorthand is e.deposit(100)
 #customer.deposit(self,balance) = self.deposit(balance) - moving the self outside for shorthand
-print erik.balance
+print e.balance
